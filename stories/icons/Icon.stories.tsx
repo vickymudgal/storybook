@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "./Icon";
+import  Icon  from "./Icon";
 import { faPlus, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 export default {

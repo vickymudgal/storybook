@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { TodoType } from './types';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-import { Icon } from '../icons/Icon'
+import  Icon  from '../icons/Icon'
 
 const ToDoContainer = styled.div`
     padding: 5px 10px;
@@ -12,7 +12,7 @@ const ToDoContainer = styled.div`
     background-color: #fafeff;
 `;
 
-export const ToDo = (taskData: TodoType) => {
+const ToDo = (taskData: TodoType) => {
     return (
         <ToDoContainer>
             {taskData.title}
@@ -22,3 +22,5 @@ export const ToDo = (taskData: TodoType) => {
 
     )
 } 
+
+export default ToDo;

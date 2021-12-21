@@ -6,8 +6,8 @@
   "scripts": {
     "test": "react-scripts test --setupFiles ./setupFile.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "build": "cross-env BABEL_ENV=production babel stories -d dist"
+    "build-storybook": "build-storybook  -- -o ./dist cross-env BABEL_ENV=production babel",
+    "build": "build-storybook  -- -o ./dist cross-env BABEL_ENV=production babel"
   },
   "babel": {
     "presets": [
@@ -25,9 +25,9 @@
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@storybook/addon-actions": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.4.9",
-    "@storybook/react": "^6.4.9",
+    "@storybook/react": "^6.3.12",
     "@storybook/testing-react": "^1.2.2",
     "babel-loader": "^8.2.3"
   },
@@ -42,6 +42,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/styled-components": "^5.1.18",
     "auto": "^10.32.5",
+    "babel-preset-react-app": "^10.0.1",
     "cross-env": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

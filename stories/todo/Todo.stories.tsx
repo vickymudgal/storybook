@@ -1,5 +1,5 @@
 import React from "react";
-import { ToDo } from "./Todo";
+import  ToDo  from "./Todo";
 
 export default {
     title: 'Todos',

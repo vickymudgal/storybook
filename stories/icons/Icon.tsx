@@ -12,10 +12,12 @@ const IconContainer = styled.a`
     cursor: pointer
 `;
 
-export const Icon = (props: IconType) => {
+const Icon = (props: IconType) => {
     return (
         <IconContainer>
            <FontAwesomeIcon icon={props.icon} />
         </IconContainer>
     )
 }
+
+export default Icon;
