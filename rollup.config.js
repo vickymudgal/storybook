@@ -27,6 +27,10 @@ export default {
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
         extensions: ['.css']
-    })
+    }),
+    alias({
+        react: path.resolve('./node_modules/react'),
+        react: path.resolve('./node_modules/react-dom'),
+      })
   ]
 };
