@@ -1,13 +1,15 @@
 {
   "name": "@vickymudgal/sample-storybook",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Storybook for POC",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "react-scripts test --setupFiles ./setupFile.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook  -- -o ./dist cross-env BABEL_ENV=production babel",
-    "build": "build-storybook  -- -o ./dist cross-env BABEL_ENV=production babel"
+    "build": "rollup -c"
   },
   "babel": {
     "presets": [
@@ -40,14 +42,21 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.1",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@types/styled-components": "^5.1.18",
     "auto": "^10.32.5",
     "babel-preset-react-app": "^10.0.1",
     "cross-env": "^7.0.3",
+    "postcss": "^8.4.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rollup": "^2.61.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.31.1",
     "styled-components": "^5.3.3"
   },
   "repository": {
