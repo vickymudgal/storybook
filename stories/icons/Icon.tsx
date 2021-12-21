@@ -5,11 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {IconType} from './types';
 
 const IconContainer = styled.a`
-    padding: 5px 10px;
-    margin: 20px 0;
+    padding: 10px 10px;
+    margin: 20px 10px;
     width: 100%;
-    background-color: #fafeff;
-    cursor: pointer
+    background-color: transparent;
+    cursor: pointer;
+
 `;
 
 const Icon = (props: IconType) => {
