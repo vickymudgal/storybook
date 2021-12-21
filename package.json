@@ -1,6 +1,6 @@
 {
   "name": "@vickymudgal/sample-storybook",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Storybook for POC",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -9,7 +9,7 @@
     "test": "react-scripts test --setupFiles ./setupFile.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook  -- -o ./dist cross-env BABEL_ENV=production babel",
-    "build": "rollup -c"
+    "build": "rollup -c --no-dll"
   },
   "babel": {
     "presets": [
