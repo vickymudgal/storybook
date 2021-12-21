@@ -1,0 +1,58 @@
+{
+  "name": "@vickymudgal/sample-storybook",
+  "version": "0.1.0",
+  "description": "Storybook for POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-scripts test --setupFiles ./setupFile.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "cross-env BABEL_ENV=production babel stories -d dist"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
+  "keywords": [],
+  "author": "vickymudgal",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@storybook/testing-react": "^1.2.2",
+    "babel-loader": "^8.2.3"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.18",
+    "auto": "^10.32.5",
+    "cross-env": "^7.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickymudgal/storybook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vickymudgal/storybook/issues"
+  },
+  "homepage": "https://github.com/vickymudgal/storybook#readme"
+}
