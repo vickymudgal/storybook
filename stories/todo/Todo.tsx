@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
-import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faTimes, faLink } from '@fortawesome/free-solid-svg-icons'
 
 import  Icon  from '../icons/Icon'
 
@@ -26,6 +26,7 @@ const ToDo = ({title, status}: {title: string, status: boolean}) => {
         <ToDoContainer status = {status}>
             {title}
             <IconWrapper>
+                <Icon icon={faLink} />
                 <Icon icon={faCheck} />
                 <Icon icon={faTimes} />
             </IconWrapper>

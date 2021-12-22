@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
+import { CSSProperties } from 'styled-components';
 
 /**
  * Primary UI component for user interaction
  */
-const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+const Button = ({ primary, backgroundColor, size, label, ...props }: {primary: boolean, backgroundColor: any , size: string, label: string}) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
